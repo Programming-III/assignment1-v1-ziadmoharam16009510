@@ -1,11 +1,26 @@
-#ifndef ANIMAL_H
-#define ANIMAL_H
+#pragma once
 
+#include <iostream>
 #include <string>
+
 using namespace std;
 
-//define animal class here 
+class animal {
+protected:
+    string name;
+    int age;
+    bool isHungry;
 
+public:
+    animal() ;
 
+    animal(string n, int a, bool H) ;
 
-#endif
+    virtual ~animal() {}
+
+    void display() ;
+    void feed() ;
+    string getName();
+    int getAge() ;
+    bool getIsHungry() ;
+};
