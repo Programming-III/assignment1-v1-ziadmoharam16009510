@@ -1,4 +1,4 @@
-#pragma once
+
 
 #include "animal.H"
 #include <string>
@@ -15,5 +15,5 @@ public:
 
     void setWingspan(float ws) ;
 
-    float getWingspan() ;
+
 };
