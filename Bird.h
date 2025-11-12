@@ -1,14 +1,19 @@
-#ifndef BIRD_H
-#define BIRD_H
+#pragma once
 
-#include "Animal.h"
+#include "animal.H"
+#include <string>
 
-//define class bird here 
+using namespace std;
 
+class bird : public animal {
+private:
+    float wingspan;
 
+public:
+    bird() ;
+    bird(string n, int a, bool H) ;
 
+    void setWingspan(float ws) ;
 
-
-
-
-#endif
+    float getWingspan() ;
+};
