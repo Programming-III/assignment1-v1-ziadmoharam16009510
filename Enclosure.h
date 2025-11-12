@@ -1,15 +1,21 @@
-#ifndef ENCLOSURE_H
-#define ENCLOSURE_H
+#pragma once
 
-#include "Animal.h"
+#include "animal.H"
+#include <vector>
 
-//define enclosure class here 
+using namespace std;
 
+class enclosure {
+private:
+    vector<animal*> animals;
+    int capacity;
+    int currentCount;
 
+public:
+    enclosure() : capacity(0), currentCount(0) {}
 
+    enclosure(int c, int cc);
 
-
-
-
-
-#endif
+    bool addAnimal(animal* a) ;
+    void displayAnimals() ;
+};
