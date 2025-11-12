@@ -1,4 +1,4 @@
-#pragma once
+
 
 #include "animal.H"
 #include <vector>
