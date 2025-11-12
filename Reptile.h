@@ -1,16 +1,20 @@
-#ifndef REPTILE_H
-#define REPTILE_H
+#pragma once
 
-#include "Animal.h"
+#include "animal.H"
+#include <string>
 
-//define reptile class here
+using namespace std;
 
+class reptile : public animal {
+private:
+    bool isVenomous;
 
+public:
+    reptile();
 
+    reptile(string n, int a, bool H) ;
 
+    void setVenomous(bool v);
 
-
-
-
-
-#endif
+    bool getVenomous();
+};
